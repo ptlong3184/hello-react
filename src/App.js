@@ -49,7 +49,10 @@ const AppContent = () => {
         <Route path="/hooks" element={<Timer />} />
         <Route path="/context" element={<ThemeToggler />} />
         <Route path="/routing" element={<RoutingExample />} />
-        <Route path="/" element={<h1>Welcome to React Practice</h1>} />
+        <Route path="/" element={<h1> Alice
+          Bob
+          Charlie
+        </h1>} />
       </Routes>
     </div>
   );
@@ -64,3 +67,6 @@ function App() {
 }
 
 export default App;
+
+
+
