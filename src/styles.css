@@ -1,0 +1,14 @@
+body {
+    transition: background-color 0.5s, color 0.5s;
+  }
+  
+  body.light {
+    background-color: white;
+    color: black;
+  }
+  
+  body.dark {
+    background-color: black;
+    color: white;
+  }
+  
