@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import Greeting from './components/Greeting';
-import GreetingWithProps from './props/GreetingWithProps';
-import Counter from './state/Counter';
-import Timer from './hooks/Timer';
-import { ThemeProvider, ThemeToggler, useTheme } from './context/ThemeContext';
-import RoutingExample from './routing/RoutingExample';
+import Greeting from './buoi2/components/Greeting';
+import GreetingWithProps from './buoi2/props/GreetingWithProps';
+import Counter from './buoi2/state/Counter';
+import Timer from './buoi2/hooks/Timer';
+import { ThemeProvider, ThemeToggler, useTheme } from './buoi2/components/context/ThemeContext';
+import RoutingExample from './buoi2/routing/RoutingExample';
 
 const AppContent = () => {
   const { theme } = useTheme();
@@ -49,10 +49,7 @@ const AppContent = () => {
         <Route path="/hooks" element={<Timer />} />
         <Route path="/context" element={<ThemeToggler />} />
         <Route path="/routing" element={<RoutingExample />} />
-        <Route path="/" element={<h1> Alice
-          Bob
-          Charlie
-        </h1>} />
+        <Route path="/" element={<h1>Welcome to React Practice</h1>} />
       </Routes>
     </div>
   );
@@ -66,7 +63,11 @@ function App() {
   );
 }
 
-export default App;
+
+
+
+
+
 
 
 
